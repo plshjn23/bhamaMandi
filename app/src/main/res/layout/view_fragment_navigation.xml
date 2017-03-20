@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/image_dummy"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="0.5dp" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_image"
+                android:gravity="center"
+                android:text="Radhika Verma"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_small" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:divider="@null" />
+
+</LinearLayout>

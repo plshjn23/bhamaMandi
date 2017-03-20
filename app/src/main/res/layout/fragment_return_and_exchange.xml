@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/order_inquries_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="For Order Inquries"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/dis_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_inquries_text_view"
+                android:layout_marginTop="4dp"
+                android:maxLines="5"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and "
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/saparater_order_quries"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/dis_text_view"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/style_advice_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saparater_order_quries"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="For Style Advice"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/dis_style_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/style_advice_text_view"
+                android:layout_marginTop="4dp"
+                android:maxLines="5"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and "
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/saparater_style_quries"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/dis_style_text_view"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/any_query_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saparater_style_quries"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="For Any Issues"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/issues_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/any_query_text_view"
+                android:layout_marginTop="4dp"
+                android:maxLines="5"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and "
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/saparater_issues_quries"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/issues_text_view"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/style_advice_text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saparater_issues_quries"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="For Style Advice"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/dis_style_text_view_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/style_advice_text_view_new"
+                android:layout_marginTop="4dp"
+                android:maxLines="5"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and "
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/saparater_style_quries_new"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/dis_style_text_view_new"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

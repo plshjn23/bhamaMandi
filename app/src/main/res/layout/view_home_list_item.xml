@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_child_relativr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <com.pernia.ui.views.IconView
+        android:id="@+id/icpn_text_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/fa_video"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_large" />
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/child_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/icpn_text_view"
+        android:gravity="center_vertical"
+        android:text="palash"
+        android:textSize="@dimen/text_size_small" />
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BhamaMandi</string>
+    <string name="home">Home</string>
+    <string name="trending">Trending</string>
+    <string name="offers">Offer</string>
+    <string name="More">more</string>
+    <string name="bag">bag</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="termsandcondition"><![CDATA[I agree to BhamaMandi]]><b><font color="#FF4081"><![CDATA[ Terms & Conditions and  Private Policy.]]></font></b></string>
+    <string name="update_message">Send me email updates on<b><font color="#FF4081"> New Arrivals and Sale Deals.</font></b></string>
+
+
+    <string name="fa_filter">&#xf0b0;</string>
+    <string name="fa_food">&#xf0f5;</string>
+    <string name="fa_painting">&#xf1fc;</string>
+    <string name="fa_pottery">&#xf0fc;</string>
+    <string name="fa_fashion">&#xf27e;</string>
+    <string name="fa_metal">&#xf085;</string>
+    <string name="fa_more">&#xf110;</string>
+    <string name="fa_cart">&#xf07a;</string>
+    <string name="fa_wish">&#xf08a;</string>
+    <string name="fa_wish_filled">&#xf004;</string>
+    <string name="fa_checked">&#xf00c;</string>
+
+    <string name="fa_create">&#xf20e;</string>
+    <string name="fa_learn">&#xf0c3;</string>
+    <string name="fa_tutor">&#xf02d;</string>
+    <string name="fa_login">&#xf007;</string>
+    <string name="fa_skip">&#xf00d;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_plus">&#xf067;</string>
+    <string name="fa_minus">&#xf068;</string>
+    <string name="fa_email">&#xf003;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_building">&#xf1ad;</string>
+    <string name="fa_sign">&#xf277;</string>
+    <string name="fa_city">&#xf19c;</string>
+    <string name="fa_city_new">&#xf041;</string>
+    <string name="fa_city_pin">&#xf22c;</string>
+    <string name="fa_category">&#xf0a3;</string>
+    <string name="fa_product">&#xf288;</string>
+    <string name="fa_money">&#xf0d6;</string>
+    <string name="fa_dis">&#xf161;</string>
+    <string name="fa_delivery">&#xf05b;</string>
+    <string name="fa_image">&#xf03e;</string>
+    <string name="fa_video">&#xf1c8;</string>
+</resources>

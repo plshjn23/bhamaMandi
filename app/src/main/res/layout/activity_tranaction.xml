@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tittle_tol"
+        layout="@layout/title_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/offers_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sapa"
+        android:layout_below="@+id/tittle_tol" />
+
+    <TextView
+        android:id="@+id/sapa"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/total_ammount"
+        android:background="@color/colorAccent" />
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/total_ammount"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Total Transaction: 20,000 only"
+        android:textSize="@dimen/text_size_medium" />
+</RelativeLayout>

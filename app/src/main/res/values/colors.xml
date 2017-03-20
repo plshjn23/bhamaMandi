@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary_dark_grey">#363d3f</color>
+    <color name="secondary_dark_grey">#5b6468</color>
+    <color name="light_grey">#8f9a9d</color>
+    <color name="stats_green">#15d26a</color>
+    <color name="stats_red">#f03155</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="color_dark_transparent">#90000000</color>
+    <color name="color_grey_transparent">#80e2e2e2</color>
+    <color name="facebookLoginButtonColor">#4a6eaa</color>
+    <color name="googleLoginButtonColor">#e26144</color>
+</resources>

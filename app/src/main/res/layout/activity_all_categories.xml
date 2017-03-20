@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <include
+        android:id="@+id/view_secondary_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/categories_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_secondary_toolbar" />
+
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/save_category_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_button_ripple_effect"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_medium" />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/title_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/english_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="English (Default)"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/english_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/english_tittle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="1"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting"
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <com.pernia.ui.views.IconView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="@string/fa_checked"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/sapa_english"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/english_dis"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/hindi_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sapa_english"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Hindi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/hindi_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hindi_tittle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="1"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/sapa_hindi"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/hindi_dis"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/marwari_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sapa_hindi"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Marwari"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/marwari_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/marwari_tittle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="1"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/sapa_marawari"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/marwari_dis"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAccent" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/hinglish_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sapa_marawari"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Hinglish"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/hinglish_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hinglish_tittle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="1"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/sapa_hinglish"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/hinglish_dis"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAccent" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <com.pernia.ui.views.customedittext.RegularEditText
+        android:id="@+id/change_your_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/change_your_name_text_view"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:focusableInTouchMode="true"
+        android:hint="Enter your email id"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/save_name_button"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/change_your_name_edit_text"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:text="Go"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

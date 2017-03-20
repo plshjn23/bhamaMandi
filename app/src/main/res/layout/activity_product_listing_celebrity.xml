@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/view_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <TextView
+        android:id="@+id/magazine_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="DressLike your favourite Celebrity "
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+
+    <TextView
+        android:id="@+id/saparater_magazine_name"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/magazine_name_text_view"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/saparater_magazine_name"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp" />
+
+
+    <TextView
+        android:id="@+id/saparater_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewPager"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <RelativeLayout
+        android:id="@+id/shop_the_look_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saparater_view_pager">
+
+        <com.pernia.ui.views.customtextview.RegularTextView
+            android:id="@+id/shop_the_look_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="SHOP THE LOOK"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/shop_the_look_text_view"
+            android:src="@color/colorPrimary" />
+
+        <com.pernia.ui.views.customtextview.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="Priyanka Chopra"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+
+    <com.pernia.ui.views.customtextview.LightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_the_look_relative_layout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:maxLines="4"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and "
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_extra_small" />
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="0.3dp"
+        android:background="@drawable/rectangle_button_ripple_effect"
+        android:text="Categories"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small" />
+
+
+</RelativeLayout>

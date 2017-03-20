@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/enroll_button">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/youtube_view"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/dis_belos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dis"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/images_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dis_belos"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="for better understanding reffer images"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/images_dis"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image_dummy"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="0.5dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image_dummy"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="0.5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image_dummy"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="0.5dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/image_dummy"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_width="0.5dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/enroll_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Next Chapter"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small" />
+
+
+</RelativeLayout>

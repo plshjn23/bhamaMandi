@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/tittl_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Are you sure you want to delete your product ?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tittl_text_view"
+        android:weightSum="2">
+
+        <com.pernia.ui.views.custombutton.RegularButton
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/delete_button"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Delete your product"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.pernia.ui.views.custombutton.RegularButton
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</RelativeLayout>

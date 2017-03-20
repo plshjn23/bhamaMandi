@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pernia.ui.activities.HomeActivity">
+
+
+    <include
+        android:id="@+id/include_tool_bar"
+        layout="@layout/title_toolbar"></include>
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_tool_bar"
+        android:layout_gravity="left">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_tool_bar"
+            android:background="@drawable/home_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/create_your_product_or_sell_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="#bbffffff">
+
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/create_your_product_or_sell_relative_layout_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:text="@string/fa_create"
+                        android:textSize="70dp" />
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/create_your_product_or_sell_relative_layout_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:text="Create your product or buy / sell"
+
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/learn_to_develop"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="#bbffffff">
+
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/learn_to_develop_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:text="@string/fa_learn"
+                        android:textSize="70dp" />
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/learn_to_develop_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Learn to develop / design new product"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/become_tutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#bbffffff">
+
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/become_tutor_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:text="@string/fa_tutor"
+                        android:textSize="70dp" />
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/become_tutor_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:text="Become a tutor"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <fragment
+            android:id="@+id/navFragment"
+            android:name="com.pernia.ui.fragment.NavigationFragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:layout="@layout/fragment_navigation"
+            tools:layout="@layout/fragment_navigation" />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

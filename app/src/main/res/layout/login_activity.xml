@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_login"
+        android:layout_below="@+id/skip_text_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Bhama Mandi"
+                android:textColor="@color/colorAccent"
+                android:textSize="32sp" />
+
+            <com.pernia.ui.views.customtextview.LightTextView
+                android:id="@+id/tv_subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:text="Buy, Sell,Learn and Teach"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/icon_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_subTitle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="@string/fa_login"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/et_enterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_subTitle"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/icon_login"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:hint="Enter BhamaShah Client Id"
+                android:maxLines="1"
+                android:paddingLeft="4dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sapa_email"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/et_enterEmail"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorAccent" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_button_ripple_effect"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_medium" />
+
+
+    <com.pernia.ui.views.IconView
+        android:id="@+id/skip_text_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/fa_skip"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large" />
+
+
+</RelativeLayout>

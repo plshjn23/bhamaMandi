@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="cursive"
+                    android:text="BhamaMandi"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/name_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_name_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_login"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_name_text"
+                        android:background="@null"
+                        android:hint="enter your full name"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_name_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_email_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_email"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_email_text"
+                        android:background="@null"
+                        android:hint="enter your email address"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_email_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_mobile_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_phone"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_mobile_text"
+                        android:background="@null"
+                        android:hint="enter your mobile number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_mobile_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_dob_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_building"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_dob_text"
+                        android:background="@null"
+                        android:hint="flat or office block number"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_dob_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_building_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_sign"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_building_text"
+                        android:background="@null"
+                        android:hint="society or building name"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_building_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_area_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_city"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_area_text"
+                        android:background="@null"
+                        android:hint="enter your area or locality"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_area_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_city_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_city_new"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_city_text"
+                        android:background="@null"
+                        android:hint="enter your city"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_city_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pernia.ui.views.IconView
+                        android:id="@+id/first_pincode_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/fa_city_pin"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pernia.ui.views.customedittext.RegularEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/first_pincode_text"
+                        android:background="@null"
+                        android:hint="enter pin code"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/first_pincode_text"
+                        android:background="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cb_term"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="Cash on Delivery"
+                        android:textColor="@color/secondary_dark_grey" />
+
+
+                    <RadioButton
+                        android:id="@+id/cb_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:layout_toRightOf="@+id/cb_term"
+                        android:buttonTint="@color/colorAccent"
+                        android:checked="true"
+                        android:text="Pay Online"
+                        android:textColor="@color/secondary_dark_grey" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.pernia.ui.views.custombutton.RegularButton
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_button_ripple_effect"
+            android:text="Pay now"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

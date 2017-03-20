@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/share_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/share_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@android:drawable/ic_menu_share" />
+
+        <com.pernia.ui.views.customtextview.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/share_image_view"
+            android:text="Share with friends"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/saparater_share_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/share_relative_layout"
+        android:layout_marginBottom="4dp"
+        android:src="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/rate_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/saparater_share_view">
+
+        <ImageView
+            android:id="@+id/rate_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:src="@android:drawable/ic_dialog_email" />
+
+        <com.pernia.ui.views.customtextview.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/rate_image_view"
+            android:text="Rate this app"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/saparater_rate_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rate_relative_layout"
+        android:layout_marginBottom="4dp"
+        android:src="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/my_account_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/saparater_rate_view">
+
+        <ImageView
+            android:id="@+id/feedback_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <com.pernia.ui.views.customtextview.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/feedback_image_view"
+            android:text="My Account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/saparater_terms_and_conditions_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/my_account_relative_layout"
+        android:layout_marginBottom="4dp"
+        android:src="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/terms_and_conditions_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/saparater_terms_and_conditions_view">
+
+        <ImageView
+            android:id="@+id/terms_and_conditions_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <com.pernia.ui.views.customtextview.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/terms_and_conditions_image_view"
+            android:text="Wishlist"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/saparater_sign_out_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/terms_and_conditions_relative_layout"
+        android:layout_marginBottom="4dp"
+        android:src="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/contact_us_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/saparater_sign_out_view">
+
+        <ImageView
+            android:id="@+id/sign_out_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:src="@android:drawable/ic_delete" />
+
+        <com.pernia.ui.views.customtextview.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/sign_out_image_view"
+            android:text="Contact Us"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/saparater_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/contact_us_relative_layout"
+        android:layout_marginBottom="4dp"
+        android:src="@color/colorPrimary" />
+
+</RelativeLayout>

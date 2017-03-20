@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_child_relativr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <include
+        android:id="@+id/view_secondary_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/enroll_button"
+        android:layout_below="@+id/view_secondary_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/end_sapa_liniear_layout"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Upload course content week wise"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <com.pernia.ui.customlayout.NonScrollableExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/outline"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:groupIndicator="@null">
+
+            </com.pernia.ui.customlayout.NonScrollableExpandableListView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/enroll_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="upload course"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small" />
+
+
+</RelativeLayout>

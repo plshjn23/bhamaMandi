@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/title_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_marginBottom="8dp">
+
+        <com.pernia.ui.views.customtextview.RegularTextView
+            android:id="@+id/shopping_bag_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Shopping Bag"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_medium" />
+
+
+        <TextView
+            android:id="@+id/saparater_shopping_bag"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/shopping_bag_text_view"
+            android:layout_marginTop="6dp"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bag_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saparater_shopping_bag"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+
+    </RelativeLayout>
+
+
+    <com.pernia.ui.views.customedittext.RegularEditText
+        android:id="@+id/apply_coupon_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/enter_gift_card_edit_text"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/edit_text_background"
+        android:focusableInTouchMode="true"
+        android:hint="Apply Coupon"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <com.pernia.ui.views.customedittext.RegularEditText
+        android:id="@+id/enter_gift_card_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/saparater_money_text_view"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/edit_text_background"
+        android:focusableInTouchMode="true"
+        android:hint="Redeem Gift Card"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/saparater_money_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/total_text_view"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary" />
+
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/total_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tax_charges_Text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="Total : 20,000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/tax_charges_Text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proceed_to_pay_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="(Exclusing and Taxes Charges)"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_extra_small" />
+
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/proceed_to_pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_button_ripple_effect"
+        android:text="PROCEED TO PAY"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_medium" />
+
+</RelativeLayout>

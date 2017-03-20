@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000">
+
+
+    <LinearLayout
+        android:id="@+id/filter_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:weightSum="3">
+
+            filter_linear_layout
+            <RelativeLayout
+                android:id="@+id/create_your_product_or_sell_relative_layout"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1">
+
+
+                <com.pernia.ui.views.IconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/fa_painting"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="Painting"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorAccent" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/learn_to_develop"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1">
+
+
+                <com.pernia.ui.views.IconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/fa_pottery"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="Pottery"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorAccent" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/become_tutor"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1">
+
+
+                <com.pernia.ui.views.IconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/fa_fashion"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="Fashion"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorAccent"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sapa_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/filter_linear_layout"
+            android:background="@color/colorAccent" />
+
+
+        <LinearLayout
+            android:id="@+id/filter_linear_layout_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sapa_linear"
+            android:background="@color/colorPrimary"
+            android:weightSum="3">
+
+
+            <RelativeLayout
+                android:id="@+id/create_your_product_or_sell_relative_layout1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1">
+
+
+                <com.pernia.ui.views.IconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/fa_food"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="Food"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorAccent" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/learn_to_develop1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1">
+
+
+                <com.pernia.ui.views.IconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/fa_metal"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="Metal work"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorAccent" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/become_tutor1"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1">
+
+
+                <com.pernia.ui.views.IconView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="@string/fa_more"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:text="More"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorAccent"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

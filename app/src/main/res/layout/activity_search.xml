@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <include
+        android:id="@+id/view_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <ImageView
+        android:id="@+id/icon_search_brands"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view_toolbar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_search" />
+
+
+    <com.pernia.ui.views.customedittext.RegularEditText
+        android:id="@+id/search_brands_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view_toolbar"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/icon_search_brands"
+        android:background="@null"
+        android:hint="Search" />
+
+    <TextView
+        android:id="@+id/saparater_search_brands_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/search_brands_edit_text"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary" />
+
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/no_brands_found_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Brands Found"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_medium"
+        android:visibility="gone" />
+
+
+    <ProgressBar
+        android:id="@+id/search_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saparater_search_brands_view" />
+
+</RelativeLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/main_child_relativr"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <include
+        android:id="@+id/view_secondary_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/enroll_button"
+        android:layout_below="@+id/view_secondary_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cover_image_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_dummy" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/tittl_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cover_image_image_view"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Pot making and design: Pottery Designing"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/useful_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tittl_text_view"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="47 people found this useful"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <TextView
+                android:id="@+id/start_sapa_dis"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/useful_text"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/dis_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_sapa_dis"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:maxLines="8"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/end_sapa_dis"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/dis_text_view"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tutor_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/end_sapa_dis"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/image_dummy"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="0.3dp" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/tutor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tutor_image"
+                android:layout_centerHorizontal="true"
+                android:text="Miss Ritu Mehta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/tutor_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tutor_name"
+                android:layout_centerHorizontal="true"
+                android:text="Studied Bechlor of Designing @ National Institute of Designing"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <TextView
+                android:id="@+id/end_sapa_tutor_dis"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tutor_college"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/end_sapa_tutor_dis"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/first_card"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="30dp">
+
+
+                        <com.pernia.ui.views.customtextview.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="19"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_large" />
+                    </android.support.v7.widget.CardView>
+
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/first_card"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="hrs of video"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/second_card"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="30dp">
+
+
+                        <com.pernia.ui.views.customtextview.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="4"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_large" />
+                    </android.support.v7.widget.CardView>
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/second_card"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="practice quizzes"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/third_card"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="30dp">
+
+
+                        <com.pernia.ui.views.customtextview.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="7"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_large" />
+                    </android.support.v7.widget.CardView>
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/third_card"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="required quizzes"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/fourth_card"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="16dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="30dp">
+
+
+                        <com.pernia.ui.views.customtextview.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="3"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_large" />
+                    </android.support.v7.widget.CardView>
+
+
+                    <com.pernia.ui.views.customtextview.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fourth_card"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="assignments"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/end_sapa_liniear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/linear_layout_round"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/end_sapa_liniear_layout"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:text="OUTLINE"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <com.pernia.ui.customlayout.NonScrollableExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/outline"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:groupIndicator="@null">
+
+            </com.pernia.ui.customlayout.NonScrollableExpandableListView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/enroll_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Enroll now"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small" />
+
+
+</RelativeLayout>

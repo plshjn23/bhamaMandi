@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/view_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/proceed_to_pay_button"
+        android:layout_below="@+id/view_toolbar"
+        android:layout_marginBottom="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/categories_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/fa_category"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/categories_icon"
+                android:background="@null"
+                android:hint="Select your category"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/sapa_cata"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/categories_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/name_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_cata"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/fa_product"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_cata"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/name_icon"
+                android:background="@null"
+                android:hint="Select your product name"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/sapa_name"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/name_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/price_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_name"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/fa_money"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/price_icon"
+                android:background="@null"
+                android:hint="Desired price in INR"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/sapa_price"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/price_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/dis_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_price"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/fa_dis"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/edit_text_dis"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/sapa_price"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/dis_icon"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Please enter your product description in detail"
+                android:maxLines="5"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/sapa_dis"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/edit_text_dis"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/del_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_dis"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/fa_delivery"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_dis"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/del_icon"
+                android:background="@null"
+                android:hint="Number of days to deliver product"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/sapa_del"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/del_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <com.pernia.ui.views.IconView
+                android:id="@+id/image_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_del"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/fa_image"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sapa_del"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/del_icon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLines="1"
+                android:text="Upload product image"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/sapa_image"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/image_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimary" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/first_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/sapa_image"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/image_dummy"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="0.5dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/second_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/sapa_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/first_image"
+                android:src="@drawable/image_dummy"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="0.5dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/third_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/sapa_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/second_image"
+                android:src="@drawable/image_dummy"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="0.5dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fourth_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/sapa_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/third_image"
+                android:src="@drawable/image_dummy"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="0.5dp" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/sapa_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/fourth_image"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="30dp">
+
+
+                <com.pernia.ui.views.customtextview.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_extra_large" />
+            </android.support.v7.widget.CardView>
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/how_to_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fourth_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="How to sell here"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/how_to_sell"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                android:textSize="@dimen/text_size_extra_small" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <com.pernia.ui.views.custombutton.RegularButton
+        android:id="@+id/proceed_to_pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_button_ripple_effect"
+        android:text="Upload"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_medium" />
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/images_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_dummy" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_delete" />
+
+    </FrameLayout>
+
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/product_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/images_frame_layout"
+        android:text="MonaLIsa"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_small" />
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/product_discription_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/images_frame_layout"
+        android:maxLines="1"
+        android:text="Loram Ipsum dummy text "
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_small" />
+
+    <com.pernia.ui.views.customtextview.RegularTextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saparater_images_text_view"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/images_frame_layout"
+        android:maxLines="1"
+        android:text="Rs. 10,000"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <TextView
+        android:id="@+id/saparater_images_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/images_frame_layout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary" />
+</RelativeLayout>

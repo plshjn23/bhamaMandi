@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/view_toolbar"
+        layout="@layout/title_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/change_your_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Change Your Name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_name_text_view"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="Change Your Name"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <com.pernia.ui.views.custombutton.RegularButton
+                android:id="@+id/save_name_button"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/change_your_name_edit_text"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:text="Save Changes"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <TextView
+                android:id="@+id/saparater_change_your_name"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/save_name_button"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/change_your_email_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saparater_change_your_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Change Your Email Address"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_email_current_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_email_text_view"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="Current Password"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_email_new_email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_email_current_password_edit_text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="New email address"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_email_confirm_email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_email_new_email_edit_text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="Confirm email address"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <com.pernia.ui.views.custombutton.RegularButton
+                android:id="@+id/save_new_email_button"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/change_your_email_confirm_email_edit_text"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:text="Save Changes"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <TextView
+                android:id="@+id/saparater_change_email"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/save_new_email_button"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customtextview.RegularTextView
+                android:id="@+id/change_your_password_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saparater_change_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Change Your Password"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_password_current_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_password_text_view"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="Current Password"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_password_new_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_password_current_password_edit_text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="New password"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <com.pernia.ui.views.customedittext.RegularEditText
+                android:id="@+id/change_your_password_confirm_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/change_your_password_new_password_edit_text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:focusableInTouchMode="true"
+                android:hint="Confirm password"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <com.pernia.ui.views.custombutton.RegularButton
+                android:id="@+id/save_new_password_button"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/change_your_password_confirm_password_edit_text"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimary"
+                android:text="Save Changes"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/save_new_password_button"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
