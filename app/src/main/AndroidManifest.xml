@@ -32,6 +32,24 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
 
+
+        <activity
+            android:name="com.payu.sdk.ProcessPaymentActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.payu.sdk.PaymentOptionsActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <meta-data
+            android:name="payu_merchant_id"
+            android:value="VVbzy3" />
+
+        <meta-data
+            android:name="payu_merchant_salt"
+            android:value="ZIjYB7Bd" />
+
+
         <activity
             android:name=".ui.activities.BookmarkedCoursesActivity"
             android:screenOrientation="portrait"

@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -18,6 +20,7 @@ import butterknife.Bind;
 import butterknife.OnClick;
 
 import static android.view.View.GONE;
+import static android.view.View.VISIBLE;
 
 /**
  * Created by om on 3/10/2017.
@@ -37,6 +40,15 @@ public class UploadYourCourseActivity extends BaseActionbarActivity {
     RadioButton free_radio;
     @Bind(R.id.paid_radio)
     RadioButton paid_radio;
+
+    @Bind(R.id.sign_price)
+    TextView sign_price;
+
+    @Bind(R.id.price_edit_text)
+    EditText price_edit_text;
+
+    @Bind(R.id.sapa_price)
+    TextView sapa_price;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,6 +74,10 @@ public class UploadYourCourseActivity extends BaseActionbarActivity {
         free_radio.setChecked(true);
         paid_radio.setChecked(false);
 
+        sapa_price.setVisibility(GONE);
+        price_edit_text.setVisibility(GONE);
+        sign_price.setVisibility(GONE);
+
     }
 
     @OnClick(R.id.paid_radio)
@@ -70,6 +86,9 @@ public class UploadYourCourseActivity extends BaseActionbarActivity {
         free_radio.setChecked(false);
         paid_radio.setChecked(true);
 
+        sapa_price.setVisibility(VISIBLE);
+        price_edit_text.setVisibility(VISIBLE);
+        sign_price.setVisibility(VISIBLE);
     }
 
     @OnClick(R.id.proceed_to_pay_button)
